@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body{
+    background: #0f0f12 !important;
+    color:#fff;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    --tw-backdrop-saturate: none !important;
+}
+body > ul > li > a {
+    color:#fff !important;
+}
+
+.backdrop-saturate-150 {
+  --tw-backdrop-saturate: saturate(1);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  --navbar-height: 6rem !important;
+}
+
+h1{
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+@media (min-width: 768px) { 
+    h1{
+        font-size: 64px;
+        font-weight: bold;
+    }
+}
+
+h2{
+    font-size: 32px;
+}
+
+@media (min-width: 768px) { 
+    h2{
+        font-size: 40px;
+    }
+}
+
+p{
+    font-size: 12px;
+    font-weight: 200 !important;
+}
+
+
+@media (min-width: 768px) { 
+    p{
+        font-size: 24px;
+        font-weight: 200 !important;
+    }
+}
+
+/* ============================================================================================================================================================ */
+button.cta {
+    color:#fff !important;
+    height: 40px !important;
+    width: 140px !important;
+    border-radius: 44px !important;
+    font-size: 12px !important;
+    p{
+        font-size: 12px !important;
+    }
+}
+
+@media (min-width: 768px) { 
+    button.cta {
+        color:#fff !important;
+        height: 72px !important;
+        width: 224px !important;
+        font-size: 20px !important;
+        border-radius: 44px !important;
+        p{
+          font-size: 18px !important;
+      }
+    }
+    
+}
+
+.border40{
+    border-radius: 40px;
+}
+
+.bgbl{
+    background-color: #0f0f13;
+    background-image: url("/static/images/40.svg");
+    background-blend-mode: color-dodge;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+@media (min-width: 768px) { 
+    .bgbl{
+        background-color: #0f0f13;
+        background-image: url("/static/images/40.svg");
+        background-blend-mode: color-dodge;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:contain;
+    }
+}
+
+
+.bg{
+    background: linear-gradient(90.53deg, rgba(255, 255, 255, 0.0144) -0.33%, rgba(255, 255, 255, 0.0264) 50%, rgba(255, 255, 255, 0.0144) 100%);
+    border-image-source: linear-gradient(90.51deg, rgba(255, 255, 255, 0.2) -0.31%, rgba(255, 255, 255, 0.01) 93.36%);
+    backdrop-filter: blur(84px);
+    box-shadow: 0px -6px 24px 0px #FFFFFF14 inset;
+    -webkit-background-clip: padding-box; 
+    background-clip: padding-box; 
+}
+
+.bo {
+    border: 1px solid rgba(255, 255, 255, .3);
+}
+
+.bgt {
+    background: linear-gradient(90.53deg, rgba(255, 255, 255, 0.1) 0.3%, rgba(255, 255, 255, 0.1) 10%, rgba(255, 255, 255, 0.1) 50%);
+}
+
+.circle{
+    background: linear-gradient(134.11deg, #0E0D0D 11.16%, rgba(21, 20, 20, 0.06) 63.41%);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
